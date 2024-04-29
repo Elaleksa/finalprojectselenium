@@ -1,0 +1,5 @@
+# https://github.com/cucumber/cucumber-jvm/tree/main/cucumber-junit-platform-engine
+cucumber.publish.enabled=true
+cucumber.features=C:/repos/mf/SeleniumCucumber/src/test/resources/features
+cucumber.filter.tags=@SampleTag
+cucumber.plugin=html:target/out.html

@@ -1,0 +1,21 @@
+
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+O
+src/test/java/tests/Driver.java,0\4\0442251772252fe8f8d5f044acd88fbee5694130
+R
+"src/test/java/driver/Settings.java,2\3\236d6866a8937b249938ff672b860a4c17f29583
+U
+%src/test/java/driver/BrowserType.java,9\1\9167e68cb1e964108bfe2b5395e384162d672896
+[
++src/test/java/driver/DriverInitializer.java,7\d\7da90ac72b0607188948fcd26a6dbf4d52a1eb90
+R
+"src/test/java/Steps/StartPage.java,6\a\6abdb73c3bf73ab9546d8f52b88b4cd8620e3f6a
+W
+'src/test/java/Steps/CredentialPage.java,2\f\2fcdb9905001eba4e1c33ea9d275bdd0298b14f6
+Y
+)src/test/java/Steps/ProductsListPage.java,a\5\a576a1ae06f87b0118acd8c2bb4eb2bc73f7afbd
+V
+&src/test/java/Steps/MyAccountPage.java,a\6\a6829e8a9801ab3705bc44d171686da461dd7ef4
+Q
+!src/test/java/Steps/BasePage.java,d\c\dc3ec37da07ca9f3ebaaa2917409a38024a0253b
