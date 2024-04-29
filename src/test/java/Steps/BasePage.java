@@ -11,8 +11,8 @@ public class BasePage {
     protected static WebDriver driver;
     protected static WebDriverWait wait;
 
-    static {
-        driver = DriverInitializer.initChrome();
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-    }
+//    static {
+//        driver = DriverInitializer.initChrome();
+//        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//    }
 }
