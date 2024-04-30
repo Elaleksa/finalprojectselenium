@@ -1,4 +1,4 @@
-Feature: Search product in Tesco website
+Feature: Search product in Tesco website - done
 
   Scenario Outline: Search for a product
 
@@ -11,4 +11,4 @@ Feature: Search product in Tesco website
 
     Examples:
       | product
-      | Milk
+      | Magyar Tej ESL Milk

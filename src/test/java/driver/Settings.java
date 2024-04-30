@@ -1,5 +1,10 @@
 package driver;
 
 public class Settings {
-    public static final String BASE_URL = "https://bevasarlas.tesco.hu/groceries/en-GB";
+
+    private static final String BASE_URL = "https://bevasarlas.tesco.hu/groceries/en-GB";
+
+    public static String getBaseUrl() {
+        return BASE_URL;
+    }
 }

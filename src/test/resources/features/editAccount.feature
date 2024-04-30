@@ -1,4 +1,4 @@
-Feature: Edit Surname in My Account on Tesco Website
+Feature: Edit Surname in My Account on Tesco Website - done
 
   Background:
     Given Open start page

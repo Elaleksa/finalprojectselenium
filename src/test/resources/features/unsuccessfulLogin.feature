@@ -1,4 +1,4 @@
-Feature: Log into Tesco website
+Feature: Log into Tesco website - done
 
   Scenario Outline: Unsuccessful login with invalid credentials
 
