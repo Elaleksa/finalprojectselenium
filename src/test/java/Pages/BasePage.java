@@ -10,10 +10,10 @@ import java.time.Duration;
 
 public class BasePage {
 
-    protected ChromeDriver driver;
+    protected WebDriver driver;
 
 
-    public BasePage(ChromeDriver driver){
+    public BasePage(WebDriver driver){
         this.driver = driver;
     }
 }

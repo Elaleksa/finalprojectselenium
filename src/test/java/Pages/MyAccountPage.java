@@ -14,19 +14,17 @@ public class MyAccountPage extends BasePage{
     By idLastNameField = By.id("last-name");
     By xpathSaveChangesBtn = By.xpath("//span[text()='Save changes']");
 
-    public MyAccountPage(ChromeDriver driver) {
+    public MyAccountPage(WebDriver driver) {
         super(driver);
     }
 
     public void clickOnEdit(){
-        WebElement webElementEditBtn = driver.findElement(xpathEditBtn);
-        driver.findElement(xpathEditBtn).isEnabled();
-        webElementEditBtn.click();
+        driver.findElement(xpathEditBtn).click();
     }
 
     public void clickOnNameField(){
         WebElement webElementNameField = driver.findElement(idLastNameField);
-        driver.findElement(idLastNameField).isEnabled();
+        webElementNameField.isEnabled();
         webElementNameField.getText();
 
         assertEquals(idLastNameField.getClass(),text);
@@ -34,7 +32,7 @@ public class MyAccountPage extends BasePage{
 
     public void clickOnSaveChangerBtn(){
         WebElement webElementSaveChangerBtn = driver.findElement(xpathSaveChangesBtn);
-        driver.findElement(xpathSaveChangesBtn).click();
+        webElementSaveChangerBtn.click();
     }
 
 }

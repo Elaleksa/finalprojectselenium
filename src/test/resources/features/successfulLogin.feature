@@ -1,4 +1,4 @@
-Feature: Log into Tesco website - done
+Feature: Log into Tesco website
 
   Scenario Outline: Successful login with valid credentials
 
@@ -10,7 +10,7 @@ Feature: Log into Tesco website - done
 #    And Accept cookies
     And Click sign in button
     When Enter valid "<email>" and valid "<password>"
-#    And Sign in to the site
+    And Sign in to the site
     Then Check successful login
 
     #To test successful log in

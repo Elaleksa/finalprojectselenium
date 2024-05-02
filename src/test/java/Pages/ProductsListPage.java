@@ -13,7 +13,7 @@ public class ProductsListPage extends BasePage{
     By xpathResult = By.xpath("//span[@class='styled__Text-sc-1i711qa-1 xZAYu ddsweb-link__text']");
 
 
-    public ProductsListPage(ChromeDriver driver) {
+    public ProductsListPage(WebDriver driver) {
         super(driver);
     }
 

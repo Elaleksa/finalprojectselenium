@@ -7,8 +7,6 @@ R
 "src/test/java/driver/Settings.java,2\3\236d6866a8937b249938ff672b860a4c17f29583
 U
 %src/test/java/driver/BrowserType.java,9\1\9167e68cb1e964108bfe2b5395e384162d672896
-[
-+src/test/java/driver/DriverInitializer.java,7\d\7da90ac72b0607188948fcd26a6dbf4d52a1eb90
 W
 'src/test/java/Pages/CredentialPage.java,a\2\a2ceb02bacdde5a3c19a41582e29019a2d08985c
 Y
@@ -21,3 +19,5 @@ N
 src/test/java/Steps/Steps.java,b\f\bff0327080e811c7ce1bab5ec924d953e417cb91
 Q
 !src/test/java/Pages/BasePage.java,f\7\f770cada2b764b7043b44d0b21059054c7bd90e4
+[
++src/test/java/driver/DriverInitializer.java,7\d\7da90ac72b0607188948fcd26a6dbf4d52a1eb90
