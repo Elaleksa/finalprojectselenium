@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.List;
 
@@ -17,7 +16,7 @@ public class ProductsListPage extends BasePage{
         super(driver);
     }
 
-    public void checkResults(){
+    public void checkResults(String arg0){
 
         List<WebElement> elements = driver.findElements(xpathResult);
        Assertions.assertFalse(elements.isEmpty());

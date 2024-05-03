@@ -3,9 +3,7 @@ package Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-import static java.awt.SystemColor.text;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class StartPage extends BasePage{
@@ -16,7 +14,7 @@ public class StartPage extends BasePage{
     By idGreetings = By.xpath("//*[@id=\"utility-header-greetings\"]");
     By idSearchField = By.id("search-input");
     By xpathSearchBtn = By.xpath("//button[@class='styled__StyledIconButton-sc-rnkc1-1 dSPDba search-bar__submit ddsweb-button ddsweb-button--icon-button']");
-    By xpathMyAccount = By.xpath("//span[@class='styled__Text-sc-1i711qa-1 xZAYu ddsweb-link__text']");
+    By xpathMyAccount = By.xpath("//*[@id=\"utility-header-account-link\"]/span");
 
     public StartPage(WebDriver driver) {
         super(driver);
@@ -48,10 +46,10 @@ public class StartPage extends BasePage{
         webElementMyAccount.click();
     }
 
-    public void EnterValueInSearchField(){
+    public void EnterValueInSearchField(String arg0){
         WebElement webElementSearchFieldOnStartPage = driver.findElement(idSearchField);
         webElementSearchFieldOnStartPage.isEnabled();
-        webElementSearchFieldOnStartPage.getText();
+        webElementSearchFieldOnStartPage.sendKeys(arg0);
     }
 
     public void clickOnSearchLoupe(){

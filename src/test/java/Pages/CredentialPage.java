@@ -38,7 +38,8 @@ public class CredentialPage extends BasePage{
     public void checkError(){
         WebElement webElementPwdError = driver.findElement(idPwdError);
         webElementPwdError.isDisplayed();
-        assertEquals(idPwdError.getClass(), text);
+        String errorMessage = webElementPwdError.getText();
+        assertEquals(errorMessage, "Please enter your password");
     }
 }
 

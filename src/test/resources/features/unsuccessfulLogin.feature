@@ -1,4 +1,4 @@
-Feature: Log into Tesco website - done
+Feature: Log into Tesco website
 
   Scenario Outline: Unsuccessful login with invalid credentials
 
@@ -15,5 +15,5 @@ Feature: Log into Tesco website - done
     #To test unsuccessful log in
 
     Examples:
-      | email
-      | elizaveta.aleksandrova.p_gmail.com
+      | email |
+      | elizaveta.aleksandrova.p_gmail.com |

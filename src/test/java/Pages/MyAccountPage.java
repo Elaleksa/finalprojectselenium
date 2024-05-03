@@ -3,7 +3,6 @@ package Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 import static java.awt.SystemColor.text;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -22,12 +21,22 @@ public class MyAccountPage extends BasePage{
         driver.findElement(xpathEditBtn).click();
     }
 
-    public void clickOnNameField(){
+    public void clickOnNameField(String arg0){
         WebElement webElementNameField = driver.findElement(idLastNameField);
         webElementNameField.isEnabled();
-        webElementNameField.getText();
 
-        assertEquals(idLastNameField.getClass(),text);
+        webElementNameField.clear();
+        webElementNameField.isEnabled();
+
+        webElementNameField.sendKeys(arg0);
+
+        //assertEquals(idLastNameField.getClass(),text);
+    }
+
+    public void compareSurname(String arg0){
+        WebElement webElementNameField = driver.findElement(idLastNameField);
+        String actualText = webElementNameField.getText();
+        assertEquals(actualText, "Alexandrova");
     }
 
     public void clickOnSaveChangerBtn(){

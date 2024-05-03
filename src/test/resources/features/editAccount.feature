@@ -3,7 +3,7 @@ Feature: Edit Surname in My Account on Tesco Website - done
   Background:
     Given Open start page
     And Click sign in button
-    When Enter valid "<email>" and valid "<password>"
+    When Enter valid "elizaveta.aleksandrova.p@gmail.com" and valid "q2n5mm770"
     And Sign in to the site
     Then Check successful login
 
@@ -16,5 +16,5 @@ Feature: Edit Surname in My Account on Tesco Website - done
     Then Compare expected and actual result
 
     Examples:
-      | surname
-      | Alexandrova
+    | surname |
+    | Alexandrova |

@@ -1,4 +1,4 @@
-Feature: Search product in Tesco website - done
+Feature: Search product in Tesco website
 
   Scenario Outline: Search for a product
 
@@ -10,5 +10,5 @@ Feature: Search product in Tesco website - done
     #There should be the list of products related to the searched product and searched product should be included of at least one product
 
     Examples:
-      | product
-      | Magyar Tej ESL Milk
+      | product |
+      | Magyar Tej ESL Milk |

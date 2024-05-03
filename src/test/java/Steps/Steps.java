@@ -46,10 +46,10 @@ public class Steps {
         credentialPage = new CredentialPage(driver);
     }
 
-    @After
-    public void closeDriver(){
-        driver.quit();
-    }
+//    @After
+//    public void closeDriver(){
+//        driver.quit();
+//    }
 
 //    @And("Accept cookies")
 //    public void acceptCookies() {
@@ -63,7 +63,7 @@ public class Steps {
 
     @When("Enter {string} into the search field")
     public void enterIntoTheSearchField(String arg0) {
-        startPage.EnterValueInSearchField();
+        startPage.EnterValueInSearchField(arg0);
     }
 
     @Then("Click on the search button")
@@ -105,7 +105,7 @@ public class Steps {
 
     @And("Enter new {string} into the input field Surname")
     public void enterNewIntoTheInputFieldSurname(String arg0) {
-        myAccountPage.clickOnNameField();
+        myAccountPage.clickOnNameField(arg0);
     }
 
     @And("Click on Save changes button")
@@ -114,12 +114,14 @@ public class Steps {
     }
 
     @Then("Compare expected and actual result")
-    public void compareExpectedAndActualResult() {
-        productsListPage.checkResults();
+    public void compareExpectedAndActualResult(String arg0) {
+        myAccountPage.compareSurname(arg0);
+
     }
 
     @Then("Check that the {string} is found")
-    public void checkThatTheIsFound(String arg0) {
+    public void checkResults(String arg0) {
+        productsListPage.checkResults(arg0);
     }
 
     @When("Enter invalid {string}")
