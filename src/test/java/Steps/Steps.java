@@ -29,15 +29,7 @@ public class Steps {
 
     @Before
     public void initializerDriver(){
-//        ChromeOptions options = new ChromeOptions();
-//        options.addArguments("--start-maximized");
-//        options.addArguments("--disable-web-security");
-//        options.addArguments("--allow-running-insecure-content");
-///       options.addArguments("--no-sandbox");
-//        options.addArguments("--disable-blink-feature=AutomationControlled");
-//        driver = en.dt.driver.DriverInitializer.initDriver(BrowserType.CHROME_SELMGR);
 
-//        driver = new ChromeDriver(options);
         driver = DriverInitializer.initDriver(BrowserType.CHROME_SELMGR);
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         startPage = new StartPage(driver);
@@ -104,8 +96,8 @@ public class Steps {
     }
 
     @And("Enter new {string} into the input field Surname")
-    public void enterNewIntoTheInputFieldSurname(String arg0) {
-        myAccountPage.clickOnNameField(arg0);
+    public void enterNewIntoTheInputFieldSurname(String arg0) throws InterruptedException {
+        myAccountPage.enterSurname(arg0);
     }
 
     @And("Click on Save changes button")
@@ -113,9 +105,9 @@ public class Steps {
         myAccountPage.clickOnSaveChangerBtn();
     }
 
-    @Then("Compare expected and actual result")
-    public void compareExpectedAndActualResult(String arg0) {
-        myAccountPage.compareSurname(arg0);
+    @Then("Compare expected {string} and actual result")
+    public void compareExpectedAndActualResult(String surname) {
+        myAccountPage.compareSurname(surname);
 
     }
 

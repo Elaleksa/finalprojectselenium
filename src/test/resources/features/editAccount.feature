@@ -1,4 +1,4 @@
-Feature: Edit Surname in My Account on Tesco Website - done
+Feature: Edit Surname in My Account on Tesco Website
 
   Background:
     Given Open start page
@@ -13,7 +13,7 @@ Feature: Edit Surname in My Account on Tesco Website - done
     When Click on Edit
     And Enter new "<surname>" into the input field Surname
     And Click on Save changes button
-    Then Compare expected and actual result
+    Then Compare expected "Elizaveta Alexandrova" and actual result
 
     Examples:
     | surname |
